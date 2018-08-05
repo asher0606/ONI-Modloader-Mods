@@ -46,6 +46,8 @@ namespace MiniCanvasMod
             Debug.Log("=== MiniCanvasMod_BuildingTemplates_CreateBuildingDef Postfix ==="+id);
             if (id == "Canvas")
             {
+               
+                
                 KAnimFile anim = __result.AnimFiles[0];
                 List<Texture2D> nTextures = new List<Texture2D>();
                 foreach (Texture2D texture in anim.textures)
@@ -69,7 +71,8 @@ namespace MiniCanvasMod
                     //texture.height = texture.height / 2;
                 }
                 anim.textures = nTextures;
-                __result.GenerateOffsets();
+                //__result.GenerateOffsets();
+                
             }
         }
         */
